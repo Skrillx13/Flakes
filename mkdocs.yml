@@ -1,0 +1,130 @@
+# -- Project Information --
+site_name: Flakes
+site_url: https://skrillx13.github.io/Flakes/
+site_author: Skrillx
+site_description: >-
+ The definitive web framework for building applications in Python.
+
+# -- GitHub Repo --
+repo_name: Flakes Project @ GitHub
+repo_url: https://github.com/Skrillx13/Flakes
+
+# -- Project Copyright --
+copyright: Copyright &copy; 2024, <a href='https://skrillx13.github.io/stardustcircuits' target='_blank' class='cauthor'>A Skrillx Project</a>.
+
+# Configuration
+theme:
+  name: material
+  custom_dir: overrides
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    - content.tooltips
+    - navigation.footer
+    - navigation.indexes
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.sections
+    - navigation.tabs
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: cyan
+      toggle:
+        icon: material/toggle-switch-off
+        name: Switch to Dark Mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: cyan
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to Light Mode
+        theme:
+  favicon: assets/images/flake.png
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: material/snowflake
+    edit: material/pen
+
+# -- Project Plugins --
+plugins:
+  - blog
+  - search
+  - awesome-pages
+
+# -- Markdown Extensions --
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      permalink_title: Header Anchor
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/mkdocs.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# -- Additional Configuration --
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Skrillx13/Flakes
+    - icon: fontawesome/brands/docker
+      link: https://hub.docker.com/r/squidfunk/mkdocs-material/
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/fastapi/
+extra_css:
+  - assets/stylesheets/styles.css

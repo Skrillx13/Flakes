@@ -1,2 +1,3 @@
 # Flakes
-The definitive web framework for building applications in Python.
+
+The definitive web framework for building web applications in Python.

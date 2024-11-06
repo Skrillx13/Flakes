@@ -1,0 +1,6 @@
+# -- Project Navigation --
+nav:
+  - Home:
+    - index.md
+    # - name: path-to-folder
+  - Blog: blog
