@@ -62,9 +62,9 @@ theme:
 
 # -- Project Plugins --
 plugins:
+  - awesome-pages
   - blog
   - search
-  - awesome-pages
 
 # -- Markdown Extensions --
 markdown_extensions:
@@ -128,3 +128,6 @@ extra:
       link: https://pypi.org/project/fastapi/
 extra_css:
   - assets/stylesheets/styles.css
+extra_javascript:
+  - assets/javascript/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js

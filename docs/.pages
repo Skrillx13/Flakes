@@ -3,4 +3,6 @@ nav:
   - Home:
     - index.md
     # - name: path-to-folder
+  - Introduction: intro
+  - Tutorial: tutorial
   - Blog: blog

@@ -1,3 +1,6 @@
+/* Stylesheet for overriding default styles in MKDocs Material */
+
+/* Centering Issues */
 .center {
     display: block;
     margin: auto;
@@ -18,10 +21,6 @@
 
 code {
     text-wrap: wrap;
-}
-
-b, strong {
-    color: #ff7700cc !important;
 }
 
 div[data-md-type='navigation']{
@@ -56,6 +55,7 @@ hr {
     font-size: 15px;
 }
 
+/* Cauthor Styles */
 .cauthor {
     background-image: linear-gradient(
         -225deg,
