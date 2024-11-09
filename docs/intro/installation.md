@@ -1,6 +1,6 @@
 # Flakes Installation
 
-The first step of using any piece of software or any pacage is to install it properly. Let's take a look at how to do this:
+The first step of using any piece of software is to install it properly. Let's take a look at how to do this:
 
 ## Dependencies
 
@@ -21,4 +21,12 @@ Upon installing Flakes, you should know there are several packages that come bud
 
 ## Virtual Enviroments
 
+We highly recommend the use of Python Virtual Enviroments when installing packages. This way, project dependencies are managed automatically, both in development and production.
+
 ## Install Flakes
+
+Now that you have gone through all of these steps, finally, you can install Flakes.
+
+``` console
+pip install flakes
+```
